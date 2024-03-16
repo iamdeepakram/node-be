@@ -11,3 +11,7 @@ app.get("/home", (req, res)=>{
     console.log(`Browser requested`);
     res.send(`<h1>Hello World!!</h1>`)
 })
+
+app.post("/home", (req, res)=>{
+    res.send({name:"test", age:"45"})
+})
